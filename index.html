@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commerce</title>
+
+    <!--=================LIEN VERS CSS==============-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--=================LIEN VERS BOXICON================-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!--=================LIEN VERS GOOGLE FONT==================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="" class="logo">
+        <form action="/search" method="GET">
+            <input type="text" name="query" placeholder="Entrez votre recherche...">
+            <button type="submit">Rechercher</button>
+        </form>
+        <nav class="navmenu">
+            <a href="">Se connecter <i class='bx bx-log-in'></i></a>
+            <a href="">Aide <i class='bx bxs-info-circle'></i></a>
+            <a href="#" id="open-cart">Panier <i class='bx bxs-cart-download'></i></a>
+            <div class="modal" id="cart-modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Panier <i class='bx bxs-cart-download'></i></h2>
+                    <ul id="item-list">
+                        <li>
+                            <img src="images/produit1.jpg" alt="Product 1">
+                            <div class="item-details">
+                                <span class="item-name">Meuble de cuisine bas d'angle en bois recyclé </span>
+                                <span class="item-price">90000 FCFA</span>
+                            </div>
+                            <button class="decrease-btn">-</button>
+                            <span class="quantity">1</span>
+                            <button class="increase-btn">+</button>
+                            <button class="delete-btn">Supprimer</button>
+                            <button class="like-btn">❤️</button>
+                        </li>
+                        <li>
+                            <img src="images/produit2.jpg" alt="Product 2">
+                            <div class="item-details">
+                                <span class="item-name">Meuble de cuisine bas 2 portes 2 tiroirs en bois </span>
+                                <span class="item-price">70000 FCFA</span>
+                            </div>
+                            <button class="decrease-btn">-</button>
+                            <span class="quantity">1</span>
+                            <button class="increase-btn">+</button>
+                            <button class="delete-btn">Supprimer</button>
+                            <button class="like-btn">❤️</button>
+                        </li>
+                    </ul>
+                    <div id="total">Total : $0</div>
+                </div>
+            </div>
+    </header>
+    <hr>
+
+    <div class="acceuil">
+        <div class="titre1">
+            <h1><span>L</span>a <span>R</span>éférence <span>E</span>n <span>T</span>erme <span>D</span>e
+                <span>M</span>eubles
+            </h1>
+
+            <p>Nous mettons a votre disposition la meilleur qualité au meilleur pris que vous puilliez avoir sur le
+                marche
+            </p>
+        </div>
+
+        <div class="bac">
+            <img src="images/bacgroung.jpeg" alt="">
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

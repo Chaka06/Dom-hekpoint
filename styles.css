@@ -1,0 +1,133 @@
+/*
+// <uniquifier>: Use a uniquifier for the class name
+// <weight>: Use a value from 200 to 1000
+
+.nunito-<uniquifier> {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+
+
+
+body {
+    margin: 10px;
+    padding: 0;
+}
+
+header {
+    position: static;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+    width: 100px;
+}
+
+input {
+    border-radius: 15px;
+    padding: 5px;
+    border: solid rgba(0, 0, 0, 0.174);
+}
+
+button {
+    border-radius: 10px;
+    padding: 5px;
+    border: solid rgba(0, 0, 0, 0.174);
+    background-color: rgba(255, 123, 0, 0.872);
+    color: antiquewhite;
+    font-family: "Nunito", sans-serif;
+}
+
+.navmenu a {
+    align-items: center;
+    text-decoration: none;
+    margin: 15px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 200;
+    color: black;
+}
+
+.navmenu a:hover {
+    transition: .4S;
+    color: rgb(255, 106, 0);
+}
+
+.acceuil h1,
+p {
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    color: rgba(14, 5, 1, 0.358);
+}
+
+.acceuil span {
+    color: rgb(255, 91, 3);
+}
+
+.bac img {
+    width: 1000px;
+    margin-left: 15%;
+    position: relative;
+
+
+}
+
+
+/*================PANIER==============*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    border-radius: 20px;
+    font-family: "Nunito", sans-serif;
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+.item-details {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.item-details .item-name {
+    font-weight: bold;
+}
+
+.item-details .item-price {
+    color: #666;
+}
